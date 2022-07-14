@@ -151,25 +151,28 @@ git commit -m '<comment>'
 git push
 ```
 
-7. Создать суперпользователя:
+7. Подключиться к серверу и создать суперпользователя в контейнере web:
 
 ```
-docker-compose exec web python manage.py createsuperuser
+ssh <пользователь>@<ip-адрес сервера>
+```
+```
+sudo docker-compose exec web python manage.py createsuperuser
 ```
 
 8. Проверьте работоспособность приложения, для этого перейдите на страницы:
 
 ```
- http://localhost/admin/
+[http://<ip-адрес сервера>/admin](http://airat.ddns.net/admin)
 ```
 ```
-http://ip/api/v1/
+[http://<ip-адрес сервера>/v1/](http://airat.ddns.net/v1/)
 ```
 
 ***Документация*** (запросы для работа с API):
 
 ```
- http://localhost/redoc/
+[http://<ip-адрес сервера>/redoc](http://airat.ddns.net/redoc)
 ```
 
 Авторы проекта:
