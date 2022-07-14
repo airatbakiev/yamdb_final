@@ -71,8 +71,8 @@ jobs:
     needs: build_and_push_to_docker_hub
     if: 
       contains('
-        refs/heads/branch1
-        refs/heads/secondbr
+      refs/heads/master
+      refs/heads/main
       ', github.ref)
     steps:
     - name: executing remote ssh commands to deploy
