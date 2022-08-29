@@ -35,7 +35,7 @@ class Category(models.Model):
         verbose_name_plural = 'Категории'
 
     def __str__(self):
-        return f'{self.name} {self.name}'
+        return f'{self.name} {self.slug}'
 
 
 class Genre(models.Model):
