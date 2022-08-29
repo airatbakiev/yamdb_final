@@ -162,13 +162,13 @@ sudo docker-compose exec web python manage.py createsuperuser
 
 ### Проверьте работоспособность приложения, для этого перейдите на страницы:
 
-[http://<ip-адрес сервера>/admin](http://airat.ddns.net/admin)
+[http://<ip-адрес сервера>/admin](http://0.0.0.0/admin)
 
-[http://<ip-адрес сервера>/v1/](http://airat.ddns.net/v1/)
+[http://<ip-адрес сервера>/v1/](http://0.0.0.0/v1/)
 
 ***Документация*** (запросы для работа с API):
 
-[http://<ip-адрес сервера>/redoc](http://airat.ddns.net/redoc)
+[http://<ip-адрес сервера>/redoc](http://0.0.0.0/redoc)
 
 
 ### Авторы проекта:
